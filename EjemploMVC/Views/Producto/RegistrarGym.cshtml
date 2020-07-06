@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "RegistrarGym";
+}
+
+<h1>Registrar nuevo gym</h1>
+<form asp-controller="Producto" asp-action="RegistrarGym" method="post">
+    <div id="recup" class="col-12">
+        <div>
+            <label for="nombre">Nombre del gym</label>
+            <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div>
+            <label for="pass">contraseña</label>
+            <input type="password" id="pass" name="pass" required />
+        </div>
+        <div>
+            <label for="descripcion">descripcion</label>
+            <input type="text" id="descripcion" name="descripcion" required />
+        </div>
+        <div>
+            <label for="direccion">direccion</label>
+            <input type="text" id="direccion" name="direccion" required />
+        </div>
+        <div>
+            <label for="telefono">telefono</label>
+            <input type="text" id="telefono" name="telefono" required />
+        </div>
+        <div>
+            <label for="correo">correo</label>
+            <input type="email" id="correo" name="correo" required />
+        </div>
+        <div>
+            <label for="horarioA">horario de apertura</label>
+            <input type="time" id="horarioA" name="horarioA" required />
+        </div>
+        <div>
+            <label for="horarioC">horario de cerrado</label>
+            <input type="time" id="horarioC" name="v" required />
+        </div>
+        <div>
+            <label for="capacidad_maxima">capacidad maxima</label>
+            <input type="number" id="capacidad_maxima" name="capacidad_maxima" required />
+        </div>
+        <div>
+            <label for="porcentaje_permitido">porcentaje permitido</label>
+            <input type="number" id="porcentaje_permitido" name="porcentaje_permitido" required />
+        </div>
+        <div>
+            <input type="submit" id="registrar" name="registrar" value="Registrar" />
+        </div>
+    </div>
+</form>
