@@ -78,12 +78,25 @@ namespace EjemploMVC.Controllers
         public IActionResult RegistrarGym(ProductoModel productoModel)
         {
 
-            if (ModelState.IsValid) {
+            if (ModelState.IsValid)
+            {
                 string connectionString = Configuration["ConnectionStrings:DB_Connection"];
                 var connection = new SqlConnection(connectionString);
-                string sqlQuery = $"exec sp_resgistro_gym @nombre_gym='{productoModel.Nombre_Gym}', @pass_gym='{productoModel.Pass_Gym}', @descripcion='{productoModel.Descripcion}', @direccion='{productoModel.Direccion}', @telefono='{productoModel.Telefono}',@correo='{productoModel.Correo}', @horarioA='{productoModel.HorarioA}', @horarioC='{productoModel.HorarioC}', @capacidad_maxima='{productoModel.Cap_Maxima}', @porcentaje_permitido='{productoModel.Porc_Permitido}'";
+                string sqlQuery = $"exec sp_resgistro_gym @nombre_gym_i='{productoModel.Nombre_Gym}', " +
+                    $"@pass_gym_i='{productoModel.Pass_Gym}', " +
+                    $"@descripcion_i='{productoModel.Descripcion}', " +
+                    $"@direccion_i='{productoModel.Direccion}', " +
+                    $"@telefono_i='{productoModel.Telefono}'," +
+                    $"@correo_i='{productoModel.Correo}', " +
+                    $"@horarioA_i='{productoModel.HorarioA}', " +
+                    $"@horarioC_i='{productoModel.HorarioC}', " +
+                    $"@capacidad_maxima_i='{productoModel.Cap_Maxima}', " +
+                    $"@porcentaje_permitido_i='{productoModel.Porc_Permitido}'";
 
-                using (SqlCommand command = new SqlCommand(sqlQuery, connection)) { 
+
+
+                using (SqlCommand command = new SqlCommand(sqlQuery, connection))
+                {
                     command.CommandType = CommandType.Text;
                     connection.Open();
                     command.ExecuteReader();
@@ -95,6 +108,7 @@ namespace EjemploMVC.Controllers
 
             return View();
         } // Registrar
+
 
         public IActionResult RegistrarAjax()
         {

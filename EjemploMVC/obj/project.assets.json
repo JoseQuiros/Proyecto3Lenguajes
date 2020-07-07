@@ -6488,19 +6488,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jqm25\\.nuget\\packages\\": {}
+    "C:\\Users\\hanse\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jqm25\\OneDrive\\Documentos\\GitHub\\Proyecto3Lenguajes\\EjemploMVC\\EjemploMVC.csproj",
+      "projectUniqueName": "C:\\Users\\hanse\\Documents\\GitHub\\Proyecto3Lenguajes\\EjemploMVC\\EjemploMVC.csproj",
       "projectName": "EjemploMVC",
-      "projectPath": "C:\\Users\\jqm25\\OneDrive\\Documentos\\GitHub\\Proyecto3Lenguajes\\EjemploMVC\\EjemploMVC.csproj",
-      "packagesPath": "C:\\Users\\jqm25\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jqm25\\OneDrive\\Documentos\\GitHub\\Proyecto3Lenguajes\\EjemploMVC\\obj\\",
+      "projectPath": "C:\\Users\\hanse\\Documents\\GitHub\\Proyecto3Lenguajes\\EjemploMVC\\EjemploMVC.csproj",
+      "packagesPath": "C:\\Users\\hanse\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hanse\\Documents\\GitHub\\Proyecto3Lenguajes\\EjemploMVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\jqm25\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hanse\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
