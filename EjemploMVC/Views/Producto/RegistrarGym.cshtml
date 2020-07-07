@@ -3,51 +3,58 @@
     ViewData["Title"] = "RegistrarGym";
 }
 
-<h1>Registrar nuevo gym</h1>
-<form asp-controller="Producto" asp-action="RegistrarGym" method="post">
-    <div id="recup" class="col-12">
-        <div>
-            <label for="nombre">Nombre del gym</label>
-            <input type="text" id="nombre" name="nombre" required />
-        </div>
-        <div>
-            <label for="pass">contraseña</label>
-            <input type="password" id="pass" name="pass" required />
-        </div>
-        <div>
-            <label for="descripcion">descripcion</label>
-            <input type="text" id="descripcion" name="descripcion" required />
-        </div>
-        <div>
-            <label for="direccion">direccion</label>
-            <input type="text" id="direccion" name="direccion" required />
-        </div>
-        <div>
-            <label for="telefono">telefono</label>
-            <input type="text" id="telefono" name="telefono" required />
-        </div>
-        <div>
-            <label for="correo">correo</label>
-            <input type="email" id="correo" name="correo" required />
-        </div>
-        <div>
-            <label for="horarioA">horario de apertura</label>
-            <input type="time" id="horarioA" name="horarioA" required />
-        </div>
-        <div>
-            <label for="horarioC">horario de cerrado</label>
-            <input type="time" id="horarioC" name="v" required />
-        </div>
-        <div>
-            <label for="capacidad_maxima">capacidad maxima</label>
-            <input type="number" id="capacidad_maxima" name="capacidad_maxima" required />
-        </div>
-        <div>
-            <label for="porcentaje_permitido">porcentaje permitido</label>
-            <input type="number" id="porcentaje_permitido" name="porcentaje_permitido" required />
-        </div>
-        <div>
-            <input type="submit" id="registrar" name="registrar" value="Registrar" />
-        </div>
+
+<div id="recup" class="container mt-5">
+    <div class="row justify-content-center">
+        <form asp-controller="Producto" asp-action="RegistrarGym" method="post" role="form">
+            <br />
+            <br />
+            <h1>Registrar nuevo gym</h1>
+            <div>
+                <label for="nombre_gym">Nombre del gym</label>
+                <input type="text" id="nombre_gym" class="form-control" name="nombre_gym" placeholder="NOMBRE" required />
+            </div>
+            <div>
+                <label for="pass_gym">contraseña</label>
+                <input type="password" id="pass_gym" class="form-control" name="pass_gym" placeholder="CONTRASEÑA" required />
+            </div>
+            <div>
+                <label for="descripcion">descripcion</label>
+                <input type="text" id="descripcion" name="descripcion" class="form-control" placeholder="DESCRIPCIÓN" required />
+            </div>
+            <div>
+                <label for="direccion">direccion</label>
+                <input type="text" id="direccion" name="direccion" class="form-control" placeholder="DIRECCIÓN" required />
+            </div>
+            <div>
+                <label for="telefono">telefono</label>
+                <input type="text" id="telefono" name="telefono" class="form-control" placeholder="TELÉFONO" required />
+            </div>
+            <div>
+                <label for="correo">correo</label>
+                <input type="email" id="correo" name="correo" class="form-control" placeholder="CORREO" required />
+            </div>
+            <div>
+                <label for="horarioA">horario de apertura</label>
+                <input type="time" id="horarioA" name="horarioA" class="form-control" placeholder="HORARIO DE APERTURA" required />
+            </div>
+            <div>
+                <label for="horarioC">horario de cerrado</label>
+                <input type="time" id="horarioC" name="horarioC" class="form-control" placeholder="HORARIO DE CLAUSURA" required />
+            </div>
+            <div>
+                <label for="cap_Maxima">capacidad maxima</label>
+                <input type="number" id="cap_Maxima" name="cap_Maxima" class="form-control" placeholder="CAPACIDAD MAXIMA" required />
+            </div>
+            <div>
+                <label for="porc_Permitido">porcentaje permitido</label>
+                <input type="number" id="porc_Permitido" name="porc_Permitido" class="form-control" placeholder="PORCENTAJE PERMITIDO" required />
+                <br>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-primary text-center" id="registrar" name="registrar" value="Registrar" />
+            </div>
+        </form>
     </div>
-</form>
+</div>
+

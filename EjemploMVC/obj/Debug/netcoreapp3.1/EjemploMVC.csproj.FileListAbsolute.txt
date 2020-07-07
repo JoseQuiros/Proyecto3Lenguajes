@@ -371,3 +371,10 @@ C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debu
 C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Access\Index.cshtml.g.cs
 C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Administrativo\Index.cshtml.g.cs
 C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+C:\Users\hanse\Documents\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Access\Index.cshtml.g.cs
+C:\Users\hanse\Documents\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Administrativo\Index.cshtml.g.cs
+C:\Users\hanse\Documents\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout - Copy.cshtml.g.cs
+C:\Users\hanse\Documents\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+C:\Users\hanse\Documents\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout_Administrador.cshtml.g.cs
+C:\Users\hanse\Documents\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\index.cshtml.g.cs
+C:\Users\hanse\Documents\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout_Cliente.cshtml.g.cs

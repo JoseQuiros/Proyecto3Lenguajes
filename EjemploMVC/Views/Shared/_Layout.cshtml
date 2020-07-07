@@ -1,95 +1,84 @@
-﻿<!DOCTYPE html>
-<html lang="es">
+﻿@{
+    ViewData["Title"] = "_Layout";
+}
 
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Ejemplo utilizando Bootstrap</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
-    <meta name="description" content="Primer sitio con html 5" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <!--<link rel="stylesheet" type="text/css" href="public/css/estilo.css"/>-->
-    <link rel="shortcut icon" type="image/x-icon" href="~/img/icono.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Proyecto Lenguajes</title>
 
 
-    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-
-    <script type="text/javascript" src="~/js/jquery-3.2.1.js"></script>
-
-    <script>
-        function registarProductoAjax(nombreProducto) {
-            var parametros = { "nombre": nombreProducto };
-            $.ajax(
-                {
-                    data: parametros,
-                    url: '/Producto/RegistrarAjax',
-                    type: 'post',
-                    beforeSend: function () {
-                        $("#resultado").html("Procesando, espere por favor ...");
-                    },
-                    success: function (response) {
-                        $("#resultado").html(response);
-                    }
-                }
-            );
-        } // registarProductoAjax
-    </script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
 </head>
-
 <body>
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Administrador</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Mi establecimiento <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Clase online</a>
+                <a class="nav-item nav-link" href="#">Cerrar Sesion</a>
 
-        <div class="row">
-
-            <div class="col-lg-8">
-                <h1>
-                    <a href="index.php">
-                        <img alt="Curso Lenguajes" src="~/img/logo.png" />
-                    </a>
-                </h1>
             </div>
-
-            <div class="col-lg-4">
-                <nav class="navbar navbar-default">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a asp-controller="Producto" asp-action="Index">Inicio</a></li>
-                        <li><a asp-controller="Producto" asp-action="Index">Ver variable Session</a></li>
-                        <li><a asp-controller="Producto" asp-action="RegistrarAutoGenerado">Registrar auto generado</a></li>
-                        <li><a asp-controller="Producto" asp-action="RegistrarGym">Registrar Gym</a></li>
-                        <li><a asp-controller="Producto" asp-action="RegistrarAjax">Registrar ajax</a></li>
-                        <li><a asp-controller="Producto" asp-action="Listar">Ver Producto</a></li>
-                    </ul>
-                </nav>
-            </div>
-
         </div>
+    </nav>
 
-        <div class="row">
-            <div class="col-lg-8">
+
+    <div class="row">
+        <div class="col-lg-8">
 
 
             @RenderBody()
 
 
 
-            </div>
+        </div>
 
-            <div class="col-lg-4">
+        @*<div class="col-lg-4">
                 <aside>
                     <a href="" target="_blank">
                         <img alt="Mediaci&oacute;n Virtual" src="~/img/mediacionvirtual.png" />
                     </a>
                 </aside>
-            </div>
-
-        </div>
-
-        <footer>
-            Ejemplo con boostrap
-        </footer>
+            </div>*@
 
     </div>
 
+    <footer id="footer">
+        <div class="footer-top">
+        </div>
+
+        <div class="container">
+            <div class="credits">
+                <p>&copy; @DateTime.Now.Year - Proyecto Lenguajes</p>
+                Designed by <a href="">Jose Quirós</a> y <a href="">Hansel Carpio</a>
+            </div>
+
+        </div>
+    </footer><!-- End Footer -->
+
     <script type="text/javascript" src="public/js/bootstrap.js"></script>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script type="text/javascript" src="~/js/jquery-3.2.1.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/js/main.js"></script>
+
+    <script type="text/javascript" src="~/js/respond.js"></script>
+
+    @RenderSection("scripts", required: false)
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
 </html>
