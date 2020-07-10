@@ -9,9 +9,10 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
-  color: #666666;
-  font-family: "Open Sans", sans-serif;
+    background: #fff;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
 }
 
 a {
@@ -734,4 +735,9 @@ section {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+.contenedor {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }

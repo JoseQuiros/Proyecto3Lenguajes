@@ -12,5 +12,19 @@ namespace EjemploMVC.Controllers
         {
             return View();
         }
+
+        public IActionResult PaginaPrincipal()
+        {
+            return View();
+        }
+        public IActionResult MiEstablecimiento()
+        {
+            return View();
+        }
+        public IActionResult Resumenes()
+        {
+            return View();
+        }
+
     }
 }

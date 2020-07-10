@@ -59,7 +59,7 @@ namespace EjemploMVC
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Administrativo}/{action=Index}/{id?}");
+                    pattern: "{controller=Access}/{action=Index}/{id?}");
             });
         }
     }

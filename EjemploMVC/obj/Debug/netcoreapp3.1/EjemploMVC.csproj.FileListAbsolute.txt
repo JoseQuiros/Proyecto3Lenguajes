@@ -371,3 +371,6 @@ C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debu
 C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Access\Index.cshtml.g.cs
 C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Administrativo\Index.cshtml.g.cs
 C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Administrativo\MiEstablecimiento.cshtml.g.cs
+C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Administrativo\PaginaPrincipal.cshtml.g.cs
+C:\Users\jqm25\OneDrive\Documentos\GitHub\Proyecto3Lenguajes\EjemploMVC\obj\Debug\netcoreapp3.1\Razor\Views\Administrativo\Resumenes.cshtml.g.cs
